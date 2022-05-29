@@ -32,6 +32,7 @@ class OpenPositionsPage():
             return False
         return True
 
+    #expectPositionTitles2 has been added so that the rest of the test can be seen.
     def isPositionVariablesExist(self):
         self.WebDriverWait(self.driver, 30).until(self.EC.visibility_of_element_located(
             (self.By.XPATH, self.positionTitles)))
